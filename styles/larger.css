@@ -1,0 +1,29 @@
+
+
+@media screen and (min-width: 617px){
+    header {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+        /* align-content: stretch; */
+    }
+
+    nav a{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+
+}
