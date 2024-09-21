@@ -26,8 +26,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     row-gap: 25px;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 
 section {
