@@ -20,6 +20,35 @@ h1 {
     padding: 1rem;
 }
 
+nav {
+    background-color: #888098;
+    color: #D9E5D6;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+nav .active{
+    background-color: rgba(0,0,0,0.2);
+}
+
 main {
     padding-top: 3rem;
     padding-bottom: 1rem;
