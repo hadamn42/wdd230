@@ -35,6 +35,10 @@ section {
     color: #46351D;
 }
 
+section h3{
+    padding-top: 1rem;
+}
+
 .center{
     display: block;
     margin-left: auto;
