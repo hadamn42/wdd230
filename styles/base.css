@@ -7,7 +7,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #A6979C !important;    
-    color: #32292F, !important;
+}
+
+body h1 {
+    color: #32292F;
 }
 
 header, main, footer {
@@ -78,4 +81,5 @@ nav .active{
 footer {
     background-color: #00a9a5;
     text-align: center;
+    color: #32292F;
 }
