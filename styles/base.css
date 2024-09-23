@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #A6979C;
 }
 
 header, main, footer {
@@ -14,7 +15,7 @@ header, main, footer {
 
 header {
     background: #00a9a5;
-    color: white;
+    color: #32292F;
     font-size: 2rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -34,7 +35,7 @@ nav {
 
 nav a {
     display: block;
-    color: white;
+    color: #F0F7F4;
     text-decoration: none;
     text-align: center;
     padding: 0.75rem;
@@ -50,10 +51,11 @@ nav .active{
 
 .parent section {
     border: 1px solid black;
-    background-color: aliceblue;
+    background-color: #F0F7F4;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
+    color: #32292F;
 }
 
 .card h2 {
