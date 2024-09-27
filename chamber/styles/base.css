@@ -74,7 +74,7 @@ nav .active{
 
 .open a {
     display: block;
-}
+} 
 
 main {
     padding-top: 3rem;
@@ -93,6 +93,13 @@ section {
 
 section h3{
     padding-top: 1rem;
+}
+
+#hero img{
+    max-height: auto;
+    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 .center{
@@ -116,38 +123,14 @@ ul {
     list-style-type: none;
 }
 
-#colors {
+.events {
     width: 50%;
     padding: 1rem;
+    margin: 0.5rem;
 }
 
-#colors li{
-    padding: 5px;
-    border: 1px solid black;
-}
-
-#color1 {
-    background-color: #0B4F6C;
-    color: #D9E5D6;
-}
-
-#color2 {
-    background-color: #f2efea;
-}
-
-#color3 {
-    background-color: #888098;
-    color: #D9E5D6;
-}
-
-#color4 {
-    background-color: #46351D;
-    color: #D9E5D6;
-}
-
-#color5 {
-    background-color: #D9E5D6;
-    color: #46351D;
+.events li{
+    padding: 0.5rem;
 }
 
 footer {

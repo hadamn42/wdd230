@@ -13,6 +13,7 @@
     
     --nav-background-color: #0b5351;
     --nav-link-color: #F0F7F4;
+    --nav-hover-text: black;
     --nav-hover: rgba(255,255,255,0.3);
     --nav-active: rgba(0,0,0,0.5);
     --card-link: blue;
@@ -89,7 +90,7 @@ ul {
 
 nav a:hover {
     background-color: var(--nav-hover);
-    color: var(--text-color);
+    color: var(--nav-hover-text);
 }
 
 nav .active{
