@@ -4,13 +4,36 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-bg: #A6979C;
+    --main-bg: #EEEEEE;
+    --heading-bg: #00a9a5;
+    --text-color: black;
+    --section-bg: #F0F7F4;
+    
+    --nav-background-color: #0b5351;
+    --nav-link-color: #F0F7F4;
+    --nav-hover: rgba(255,255,255,0.3);
+    --nav-active: rgba(0,0,0,0.5);
+    --card-link: blue;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #A6979C !important;    
+    background-color: var(--body-bg) !important;    
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 body h1 {
-    color: #32292F;
+    color: var(--text-color);
 }
 
 header, main, footer {
@@ -18,11 +41,12 @@ header, main, footer {
  }
 
 header {
-    background: #00a9a5;
-    color: #32292F;
-    font-size: 2rem;
+    background: var(--heading-bg);
+    color: var(--text-color);
+    font-size: 2.5rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    font-weight: bold;
 }
 
 header span {
@@ -33,39 +57,66 @@ ul {
     list-style-type: none;
 }
   
-nav {
-    background: #0b5351;
+#menu {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 0.25rem;
 }
 
-nav a {
-    display: block;
-    color: #F0F7F4;
+#menu::before{
+    content: "≡";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.navigation {
+    background-color: var(--nav-background-color);
+}
+
+.navigation a {
+    display: none;
+    color: var(--nav-link-color);
     text-decoration: none;
     text-align: center;
     padding: 0.75rem;
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.3);
+    background-color: var(--nav-hover);
+    color: var(--text-color);
 }
 
 nav .active{
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--nav-active);
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    background-color: var(--main-bg) !important;
 }
 
 .parent section {
-    border: 1px solid black;
-    background-color: #F0F7F4;
+    border: 1px solid var(--text-color);
+    background-color: var(--section-bg);
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
-    color: #32292F;
+    color: var(--text-color);
 }
 
 .card h2 {
     display: block;
-    background-color: #00a9a5;
-    color: #32292F;
+    background-color: var(--heading-bg);
+    color: var(--text-color);
 }
 
 .card h2, .card ul {
@@ -75,11 +126,19 @@ nav .active{
 .card p{
     padding-left: 0.5rem;
     padding-top: 0.5rem;
-    color: #32292F;
+    color: var(--text-color);
+}
+
+.card li {
+    padding-bottom: 0.5rem;
+}
+
+.card a {
+    color: var(--card-link);
 }
 
 footer {
-    background-color: #00a9a5;
+    background-color: var(--heading-bg);
     text-align: center;
-    color: #32292F;
+    color: var(--text-color);
 }

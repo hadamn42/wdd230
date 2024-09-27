@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2efea;
+}
+
+header, h2, footer {
+    background-color: #0B4F6C;
+    color: #D9E5D6;
+    text-align: center;
+    
+}
+
+h1 {
+    padding: 1.5rem;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #0B4F6C;
+    color: #D9E5D6;
+    padding: 0.25rem;
+}
+
+#menu::before{
+    content: "≡";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+nav {
+    background-color: #888098;
+}
+
+.navigation a {
+    display: none;
+    color: #D9E5D6;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #534B4E;
+}
+
+nav .active{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    justify-content: space-evenly;    
+}
+
+section {
+    width: 47%;
+    background-color: #D9E5D6;
+    color: #46351D;
+}
+
+section h3{
+    padding-top: 1rem;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+section h2 {
+    display: block;
+    padding: 0.5rem;
+}
+
+section #texts{
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#colors {
+    width: 50%;
+    padding: 1rem;
+}
+
+#colors li{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#color1 {
+    background-color: #0B4F6C;
+    color: #D9E5D6;
+}
+
+#color2 {
+    background-color: #f2efea;
+}
+
+#color3 {
+    background-color: #888098;
+    color: #D9E5D6;
+}
+
+#color4 {
+    background-color: #46351D;
+    color: #D9E5D6;
+}
+
+#color5 {
+    background-color: #D9E5D6;
+    color: #46351D;
+}
+
+footer {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact {
+    text-align: left;
+    grid-column: 1/2;
+}
+
+.genInfo {
+    grid-column: 3/4;
+
+}

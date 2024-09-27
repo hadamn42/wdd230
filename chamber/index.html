@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Logan Chamber of Commerce Homepage">
+    <meta name="author" content="Adam Neil Humes">
+    <meta name="title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Homepage">
+    <meta property="og:title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logachamber.jpg" />
+    <meta property="og:url" content="https://hadamn42.github.io/wdd230/chamber/" />
+    <title>Logan Chamber of Commerce Site Plan</title>
+    <link rel="icon" href="images/favicon.ico" type="iamge/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Logan Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a class = "active" href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Information</h2>
+            <div id ="texts">
+                <h3>Site Name</h3>
+                <p>Logan Chamber of Commerce</p>
+                <h3>Site Purpose</h3>
+                <p>The Logan Chamber of Commerce, first, builds up local businesses.</p>
+                <p>Second, it creates connection between local entrepeneurs and the community. </p>
+                <p>Third, it offers an opportunity for all businesses (large and small) to network with one another.</p>
+                <h3>Scenarios</h3>
+                <p>Why join? How to join Growing the Community (accomplishments)</p>
+                <p>How does the Chamber of Commerce engage with the community? Local Events </p>
+                <p>How can I contact the Chamber of Commerce? Contact </p>
+                <h3>Typography</h3>
+                <p>Montserrat</p>
+
+            </div> <!-- end texts -->
+        </section>
+        <section>
+            <h2>Color Schema</h2>
+            <div class="box">
+                <ul id="colors">
+                    <li id="color1">Headings</li>
+                    <li id="color2">General Background</li>
+                    <li id="color3">Nav Bar</li>
+                    <li id="color4">Font Color</li>
+                    <li id="color5"> Secondary Background Color & Alternate Font Color</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Lare Wireframe</h2>
+            <img src="images/chamberWireframeLarge.jpg" alt="Logan Chamber of Commerce Large Wireframe Homepage" class="center">
+        </section>
+        <section>
+            <h2>Small Wireframe</h2>
+            <img src="images/chamberWireframeMobile.jpg" alt="Logan Chamber of Commerce Small Wireframe Homepage" class="center">
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Contact us:</p>
+            <ul>
+                <li>Phone: (555) 555-1234</li>
+                <li>Email: logachamber@fakedomain.com</li>
+            </ul>
+        </div>
+        <div class="genInfo">
+            <p>&copy;<span id="currentYear"></span> | Adam Neil Humes | Utah </p>
+            <p>Made for WDD 230</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
