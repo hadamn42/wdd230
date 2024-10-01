@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <meta name="description" content="demonstration of responsive images">
+    <meta name="author" content="Adam Neil Humes">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Example</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(min-width: 500px)" >
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)" >
+                <img src="images/hero-large.webp" alt="Oquirrh Mountain temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>&copy;Adam Neil Humes | WDD 230 - Fall 2024</footer>
+    <!-- <script src="scripts/lazyload.js"></script> -->
+</body>
+</html>
