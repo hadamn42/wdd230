@@ -11,6 +11,10 @@
         display: none;
     }
 
+    .herolabel {
+        color: white;
+    }
+
     .navigation ul{
         display: flex;
         justify-content: space-evenly;

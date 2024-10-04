@@ -41,7 +41,20 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
-    
+
+const visitDisplay = document.querySelector("#visitCount");
+
+let numVisit = Number(window.localStorage.getItem("numVis")) || 0;
+
+if (numVisit !== 0) {
+    visitDisplay.textContent = numVisit;
+} else {
+    visitDisplay.textContent = "This is your first time here! Hello!";
+}
+
+numVisit++;
+
+localStorage.setItem("numVis", numVisit);
 
 
 

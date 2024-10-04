@@ -23,7 +23,7 @@
     <div id="mode">
         🌙
     </div>
-    <header><img src="images/profile.jpg" alt="Profile Picture"> <span>Adam Neil Humes</span></header>
+    <header><img src="images/profile.webp" alt="Profile Picture"> <span>Adam Neil Humes</span></header>
     <button id="menu"></button>
     <nav class="navigation">
         <ul>
@@ -34,6 +34,17 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/logan-hero-small.webp" media="(max-width: 500px)" >
+                <source srcset="images/logan-hero-med.webp" media="(max-width: 1000px)" >
+                <img srcset="images/logan-hero-large.webp" alt="Logan, Utah temple" width="1278" height="522">
+            </picture>
+            <div class="herolabel">
+                <p>Logan Utah Temple</p>
+            </div>    
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="parent">
             <section class="card">
@@ -50,10 +61,12 @@
             <section class="card">
                 <h2>Information</h2>
                 <p>WEATHER</p>
-                <p>NUMBER OF VISITS</p>
+                <p>Visit Count: <span id="visitCount"></span></p>
                 <p>PLACEHOLDER 3.1</p>
             </section>
         </div> <!--  end parent -->
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6053.210311836846!2d-111.94344488781338!3d40.66063337128218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528bf1fa8e96d5%3A0x9e47453e20f87aa8!2sTaylorsville%2C%20UT%2084129!5e0!3m2!1sen!2sus!4v1728006197094!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> | Adam Neil Humes | Utah </p>
