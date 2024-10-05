@@ -20,7 +20,7 @@ let visitDiff = dateToday - visitDays;
 
 if (visitDays !== 0) {
     if (visitDiff > msToDays) {
-		visitDisplay.textContent = `You last visited ${visitDiff/msToDays} days ago!`;
+		visitDisplay.textContent = `You last visited ${Math.floor(visitDiff/msToDays)} days ago!`;
 	} else {
 		visitDisplay.textContent = "Back so soon! Awesome!";
 	}
