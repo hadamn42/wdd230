@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Logan Chamber of Commerce Homepage">
+    <meta name="author" content="Adam Neil Humes">
+    <meta name="title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Homepage">
+    <meta property="og:title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logachamber.jpg" />
+    <meta property="og:url" content="https://hadamn42.github.io/wdd230/chamber/" />
+    <title>Logan Chamber of Commerce Site Plan</title>
+    <link rel="icon" href="images/favicon.ico" type="iamge/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Logan Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/index.html">WDD 230 Home</a></li>
+            <li><a href="index.html">Chamber Home</a></li>
+            <li><a class = "active" href="#">Discover Logan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="discover">
+        <div id="sidebar">
+            <section>
+                <h2>Welcome!</h2>
+                <p><span id="visit"></span></p>
+            </section>
+            <section>
+                <h2>Demographics and Statistics</h2>
+                <ul>
+                    <li>Population: 55,20</li>
+                    <li>Land are in square miles: 17.85</li>
+                    <li>Population per square mile: 2,957.6</li>
+                    <li>Households: 17,637</li>
+                </ul>
+                <p>Source: <a href="https://www.census.gov/quickfacts/fact/table/logancityutah/INC110222">US Census</a></p>
+            </section>
+            <section>
+                <h2>Calendar</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=c697fa6bddfec182903e332d24c2c7d595fc03dcbf2bb028418fc90cb2e0b637%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" frameborder="0" scrolling="no"></iframe>
+            </section>
+
+        </div>
+        <div id="localinterest">
+            <h2>Behold Logan!</h2>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+            <div class="discpic">
+                <picture>
+                    <img src="https://loremflickr.com/700/600" alt="Placeholder" loading="lazy" width="700" height="600">
+                </picture>
+                <div class="discpiccaption">
+                    <p>title</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Contact us:</p>
+            <ul>
+                <li>Phone: (555) 555-1234</li>
+                <li>Email: logachamber@fakedomain.com</li>
+            </ul>
+        </div>
+        <div class="genInfo">
+            <p>&copy;<span id="currentYear"></span> | Adam Neil Humes | Utah </p>
+            <p>Made for WDD 230</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
