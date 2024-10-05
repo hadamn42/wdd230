@@ -165,6 +165,7 @@ ul {
 
 .discpic {
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .discpic img {
@@ -177,8 +178,7 @@ ul {
     position:absolute;
     top: 30px;
     left: 30px;
-    background-color: rgba(255,255,255,0.3);
-    border: 1px solid white;
+    background-color: rgba(0,0,0,0.3);
     padding: 1.5rem; 
     font-size: 2.5rem;
     color: white;

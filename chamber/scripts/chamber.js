@@ -16,6 +16,7 @@ const msToDays = 86400000;
 
 let visitDays = window.localStorage.getItem("numVis") || 0;
 
+
 let visitDiff = dateToday - visitDays;
 
 if (visitDays !== 0) {
