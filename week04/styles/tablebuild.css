@@ -1,0 +1,60 @@
+:root {
+    --haedcolor: rgb(90, 88, 88);
+    --basic-border: 1px solid darkgray;
+    --border2: 1px solid black;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+table {
+    border: var(--basic-border);
+    border-collapse: collapse;
+    background-color: black;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: 0.85rem;
+}
+
+th, td{
+    padding: 5px;
+}
+
+td {
+    border: 1px solid darkgray;
+    background-color: white;
+}
+
+td {
+    text-align: center;
+}
+
+
+thead th{
+    background-color: var(--haedcolor) !important;
+    color: white;
+    font-size: 1.25rem;
+    border: 1px solid var(--haedcolor);
+}
+
+tr th{
+    background-color: white;
+}
+
+#row2 td, #row2 th{
+    background-color: lightgray;
+}
+
+.blank {
+    background-color: black !important;
+    border: var(--border2);
+}
+
+#headhead{
+    background-color: black !important;
+    border: var(--border2);
+}
