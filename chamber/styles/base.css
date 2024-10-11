@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bodybg: #f2efea;
+    --hdbg: #0B4F6C;
+    --hdtxt: #D9E5D6;
+    --navbg:#888098;
+    --secbg: #D9E5D6;
+    --sectxt: #46351D;
+    --formwidth: 400px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f2efea;
+    background-color: var(--bodybg);
 }
 
 header, h2, footer {
-    background-color: #0B4F6C;
-    color: #D9E5D6;
+    background-color: var(--hdbg);
+    color: var(--hdtxt);
     text-align: center;
     
 }
@@ -38,8 +48,8 @@ h3 {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: #0B4F6C;
-    color: #D9E5D6;
+    background-color: var(--hdbg);
+    color: var(--hdtxt);
     padding: 0.25rem;
 }
 
@@ -52,7 +62,7 @@ h3 {
 }
 
 nav {
-    background-color: #888098;
+    background-color: var(--navbg);
 }
 
 nav ul {
@@ -92,8 +102,8 @@ nav .active{
 
 section {
     width: 47%;
-    background-color: #D9E5D6;
-    color: #46351D;
+    background-color: var(--secbg);
+    color: var(--sectxt);
 }
 
 section h3{
@@ -183,6 +193,89 @@ ul {
     font-size: 2.5rem;
     color: white;
 }
+
+
+#thanks p {
+    padding: 0.5rem;
+}
+
+
+/* Join Form  */
+
+#join {
+    background-color: var(--secbg);
+    color: var(--sectxt);
+    padding: 0.5rem;
+    width: 100%;
+    max-width: var(--formwidth);
+}
+
+.frmhd {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+#join label{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+#join input[type="text"],
+#join input[type="tel"],
+#join input[type="email"],
+#join textarea
+{
+
+    display: block;
+    width: 100%;
+    max-width: var(--formwidth);
+    padding: 0.75rem;
+}
+
+#join input[type="radio"] {
+    margin-right: 6px;
+}
+
+#rodeo label{
+    padding: 0.25rem !important;
+}
+
+#join input:placeholder-shown{
+    background-color: rgba(255, 255, 255, 0.455);
+}
+
+#join input[type="submit"]{
+    background-color: var(--hdbg);
+    color: var(--hdtxt);
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: var(--formwidth);
+}
+
+
+/* Form sidebar */
+
+#memsid div{
+    padding: 0.5rem;
+}
+
+#memsid ul{
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.nested{
+    list-style-type: circle !important;
+}
+
+
+/* Footers */
 
 footer {
     padding: 1rem;
