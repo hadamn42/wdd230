@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="mode">
+        🌙
+    </div>
+    <header><img src="images/profile.webp" alt="Profile Picture"> <span>Adam Neil Humes</span></header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thanks.html" class="form1">
+            <label>Username* <input type="text" id="uname" name="username" required></label>
+            <label>Password* <input type="password" id="pwd1" name="pwd" pattern="[a-zA-Z0-9]{8,}" required></label>
+            <label>Re-Enter Password* <input type="password" id="pwd2" name="pwd2" pattern="[a-zA-Z0-9]{8,}" required></label>
+            <div id="message"></div>
+            <label>Please enter a valid email address <input type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+            <label for="r">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <input type="submit" value="Rate This Page">
+
+            </form>
+
+
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Adam Neil Humes | Utah </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

@@ -42,17 +42,38 @@ modeButton.addEventListener("click", () => {
 });
 
 
-const visitDisplay = document.querySelector("#visitCount");
+// Verify Password
 
-let numVisit = Number(window.localStorage.getItem("numVis")) || 0;
+const pw1 = document.querySelector("#pwd1");
+const pw2 = document.querySelector("#pwd2");
+const message = document.querySelector("#message");
 
-if (numVisit !== 0) {
-    visitDisplay.textContent = numVisit;
-} else {
-    visitDisplay.textContent = "This is your first time here! Hello!";
+pw2.addEventListener("focusout", checkSame);
+
+function checkSame(){
+    if (pw1.value !== pw2.value) {
+        message.textContent = "❗Key Phrases DO NOT MATCH!";
+		message.style.visibility = "show";
+		pw2.style.backgroundColor = "#fff0f3";
+		pw2.value = "";
+		pw2.focus();
+	} else {
+		message.style.display = "none";
+		pw2.style.backgroundColor = "#fff";
+		pw2.style.color = "#000";
+	}
 }
 
-numVisit++;
 
-localStorage.setItem("numVis", numVisit);
+// Range thing
 
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("r");
+
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}

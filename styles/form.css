@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #A6979C;
+    --main-bg: #EEEEEE;
+    --heading-bg: #00a9a5;
+    --text-color: black;
+    --section-bg: #F0F7F4;
+    
+    --nav-background-color: #0b5351;
+    --nav-link-color: #F0F7F4;
+    --nav-hover-text: black;
+    --nav-hover: rgba(255,255,255,0.3);
+    --nav-active: rgba(0,0,0,0.5);
+    --card-link: blue;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg) !important;    
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+body h1 {
+    color: var(--text-color);
+}
+
+header, main, footer {
+    padding: 1rem; 
+ }
+
+header {
+    background: var(--heading-bg);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-weight: bold;
+}
+
+header span {
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+#menu {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 0.25rem;
+}
+
+#menu::before{
+    content: "≡";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.navigation {
+    background-color: var(--nav-background-color);
+}
+
+.navigation a {
+    display: none;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover);
+    color: var(--nav-hover-text);
+}
+
+nav .active{
+    background-color: var(--nav-active);
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    background-color: var(--main-bg) !important;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    background-color: var(--nav-hover);
+    border: 1px solid white;
+    padding: 1.5rem; 
+    font-size: 2.5rem;
+}
+
+.parent section {
+    border: 1px solid var(--text-color);
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+.card h2 {
+    display: block;
+    background-color: var(--heading-bg);
+    color: var(--text-color);
+}
+
+.card h2, .card ul {
+    padding: 0.5rem;
+}
+
+.card p{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    color: var(--text-color);
+}
+
+.card li {
+    padding-bottom: 0.5rem;
+}
+
+.card a {
+    color: var(--card-link);
+}
+
+footer {
+    background-color: var(--heading-bg);
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* form */
+
+.form1 input[type="text"],
+.form1 input[type="password"],
+.form1 input[type="email"],
+.form1 input[type="range"],
+.form1 input[type="submit"]
+{
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    border-radius: 6px;
+    border: 2px solid var(--text-color);
+}
+
+.form1 label {
+    color: var(--text-color);
+}
+
+#rangevalue {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.form1 input[type="submit"]{
+    border: none;
+    background-color: var(--heading-bg);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form1 input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--nav-background-color);
+    border-radius: 6px;
+    border: none;
+}
+
+#r::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 45px; 
+    height: 45px; 
+    background: var(--nav-link-color); 
+    cursor: pointer; 
+    border-radius: 45px;
+    border: none;
+}
+
+#r::-moz-range-thumb {
+    width: 45px; 
+    height: 45px; 
+    background: var(--nav-link-color); 
+    cursor: pointer; 
+    border-radius: 45px;
+  }
+
+
+@media screen and (min-width: 617px){
+    header {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .herolabel {
+        color: white;
+    }
+
+    .navigation ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+        /* align-content: stretch; */
+    }
+
+    .navigation a{
+        display: block;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .form1 {
+        display: grid;
+        justify-content: center;
+        
+    }
+}
