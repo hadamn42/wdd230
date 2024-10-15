@@ -1,0 +1,28 @@
+{
+    "familyName" : "Jackson",
+    "moveInDate" : "23Oct2022",
+    "numRec" : "4",
+    "visitBish" : "Y",
+    "members" : [
+        {
+            "name" : "Alan Jackson",
+            "gender" : "male",
+            "dob" : "26Jan1990"
+        },
+        {
+            "name" : "Debora Jackson",
+            "gender" : "female",
+            "dob" : "02May1996"
+        },
+        {
+            "name" : "Jennifer Jackson",
+            "gender" : "female",
+            "dob" : "19Jun2022"
+        },
+        {
+            "name" : "Alison Jackson",
+            "gender" : "female",
+            "dob" : "19Jun2022"
+        }
+    ]
+}
