@@ -8,7 +8,7 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displaylinks(data.weeks);
         } else {
             throw Error(await response.text());
@@ -23,13 +23,20 @@ const displaylinks = (data) => {
         let weekLinks = document.createElement('li');
         weekLinks.textContent = week.week;
         let linkList = " | ";
+        let i = 1;
         week.links.forEach(link => {
             let actLink1 = document.createElement('a');
             actLink1.setAttribute("href", link.url);
             actLink1.textContent = link.title;
             weekLinks.appendChild(actLink1);
+            if ( i < week.links.length ) {
+                 weekLinks.append(linkList);
+            }
+            i = i + 1;
+           
         });
-
+        // weekLinks.slice(0, -3);
+        console.log(weekLinks);
         actLink.appendChild(weekLinks);
         // console.log(actLink);
     });

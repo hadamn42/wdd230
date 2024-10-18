@@ -5,7 +5,7 @@
             "links": [
                 {
                     "url" : "week01/holygrail.html",
-                    "title" : "Grail | "
+                    "title" : "Grail"
                 },
                 {
                     "url" : "week01/media-query.html",
@@ -18,11 +18,11 @@
             "links": [
                 {
                     "url" : "week02/design.html",
-                    "title" : "Design | "
+                    "title" : "Design"
                 },
                 {
                     "url" : "week02/bom.html",
-                    "title" : "BOM Top 10 | "
+                    "title" : "BOM Top 10"
                 },
                 {
                     "url" : "https://codepen.io/hadamn42/pen/WNVNVLz",
@@ -35,15 +35,15 @@
             "links": [
                 {
                     "url" : "week03/images/landscape.webp",
-                    "title" : "WebP | "
+                    "title" : "WebP"
                 },
                 {
                     "url" : "week03/lazyload.html",
-                    "title" : "Lazy Load | "
+                    "title" : "Lazy Load"
                 },
                 {
                     "url" : "week03/responsive-images.html",
-                    "title" : "Responsive Images | "
+                    "title" : "Responsive Images"
                 },
                 {
                     "url" : "week03/bom.html",
@@ -56,15 +56,15 @@
             "links": [
                 {
                     "url" : "https://codepen.io/hadamn42/pen/rNXMPyW",
-                    "title" : "Pseudo-Class | "
+                    "title" : "Pseudo-Class"
                 },
                 {
                     "url" : "week04/images/W3schoolcompletion.jpg",
-                    "title" : "W3 Combinators | "
+                    "title" : "W3 Combinators"
                 },
                 {
                     "url" : "week04/tablebuid.html",
-                    "title" : "HTML Table | "
+                    "title" : "HTML Table"
                 },
                 {
                     "url" : "week04/index.html.html",
@@ -77,15 +77,15 @@
             "links": [
                 {
                     "url" : "https://codepen.io/hadamn42/pen/eYqvVop",
-                    "title" : "Pseudo-Elements | "
+                    "title" : "Pseudo-Elements"
                 },
                 {
                     "url" : "week05/new-ward-memebers.json",
-                    "title" : "JSON | "
+                    "title" : "JSON"
                 },
                 {
                     "url" : "week05/prophets.html",
-                    "title" : "Prophet Database Request | "
+                    "title" : "Prophet Database Request"
                 },
                 {
                     "url" : "week05/weather.html",
