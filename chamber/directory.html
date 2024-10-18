@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Logan Chamber of Commerce Directory">
+    <meta name="author" content="Adam Neil Humes">
+    <meta name="title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Directory">
+    <meta property="og:title" content="Adam Humes - WDD 230 - Logan Chamber of Commerce Directory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logachamber.jpg" />
+    <meta property="og:url" content="https://hadamn42.github.io/wdd230/chamber/" />
+    <title>Logan Chamber of Commerce Site Plan</title>
+    <link rel="icon" href="images/favicon.ico" type="iamge/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Logan Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="../index.html">WDD 230 Home</a></li>
+            <li><a class = "active" href="#">Chamber Home</a></li>
+            <li><a href="discover.html">Discover Logan</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="homepage">
+        <div id="members"></div>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Contact us:</p>
+            <ul>
+                <li>Phone: (555) 555-1234</li>
+                <li>Email: logachamber@fakedomain.com</li>
+            </ul>
+        </div>
+        <div class="genInfo">
+            <p>&copy;<span id="currentYear"></span> | Adam Neil Humes | Utah </p>
+            <p>Made for WDD 230</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
