@@ -35,10 +35,8 @@ const displaylinks = (data) => {
             i = i + 1;
            
         });
-        // weekLinks.slice(0, -3);
         console.log(weekLinks);
         actLink.appendChild(weekLinks);
-        // console.log(actLink);
     });
 }
 
