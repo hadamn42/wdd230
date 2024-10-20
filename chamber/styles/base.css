@@ -301,8 +301,8 @@ ul {
 }
 
 #membutts button:hover{
-    background-color: var(--secbg);
-    color: var(--sectxt);
+    background-color: var(--secbg) !important;
+    color: var(--sectxt) !important;
 }
 
 .listmem{
