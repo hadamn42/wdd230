@@ -9,9 +9,11 @@
     --hdbg: #0B4F6C;
     --hdtxt: #D9E5D6;
     --navbg:#888098;
+    --navtxt: black;
     --secbg: #D9E5D6;
     --sectxt: #46351D;
     --formwidth: 400px;
+    --hover: rgba(255,255,255,0.2);
 }
 
 body {
@@ -71,7 +73,7 @@ nav ul {
 
 .navigation a {
     display: none;
-    color: #000000;
+    color: var(--navtxt);
     text-decoration: none;
     text-align: center;
     padding: 0.75rem;
@@ -79,7 +81,7 @@ nav ul {
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: var(--hover);
 }
 
 nav .active{
@@ -272,6 +274,84 @@ ul {
 
 .nested{
     list-style-type: circle !important;
+}
+
+/* directory */
+
+#membutts{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+#membutts button {
+    background-color: var(--navbg);
+    color: var(--navtxt);
+    font-size: 1.25rem;
+    margin-right: 15px;
+    padding: 0.5rem;
+    /* border: var(--sectxt) solid 2px; */
+    border: none;
+    box-shadow: 2px 2px var(--navtxt);
+    cursor: pointer;
+}
+
+.membuttactive{
+    background-color: var(--hdbg) !important;
+    color: var(--hdtxt) !important;
+}
+
+#membutts button:hover{
+    background-color: var(--secbg);
+    color: var(--sectxt);
+}
+
+.listmem{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.listmem section{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding: 0.5rem;
+    width: 95%;
+    align-items: center;
+}
+
+.listmem section:nth-child(even){
+    background-color: var(--navbg);
+    color: var(--navtxt);
+}
+
+.gridmem .memdisplay, .listmem .memigmy {
+    display: none;
+}
+
+
+
+.gridmem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.gridmem section {
+    width: 500px !important;
+    text-align: center !important;
+    /* background-color: blue; */
+    margin: 2rem;
+    padding: 0.75rem;
+    align-content: center;
+    /* border: var(--sectxt) solid 2px; */
+}
+
+.gridmem section img {
+    margin-bottom: 0.5rem;
 }
 
 

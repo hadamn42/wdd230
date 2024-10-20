@@ -45,5 +45,14 @@
         margin-right: auto;
     }
 
+    /* Discovery */
+    .listmem .memigmy {
+        display: inline-block;
+    }
+
+    .listmem .memdisplay {
+        display: none;
+    }
+
    
 }

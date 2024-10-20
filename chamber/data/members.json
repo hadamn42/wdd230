@@ -1,60 +1,60 @@
 {
     "members" : [
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "Herm's Inn",
+            "address" : "1435 Canyon Road, Logan Utah 84321",
+            "phone" : "(435) 792-4321",
+            "url" : "https://www.hermsinn.com",
+            "img" : "images/herms-inn-logo.webp",
+            "mem-level" : "Gold"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "Fredrico's Pizza",
+            "address" : "1349 East 700 North Logan, UT 84321",
+            "phone" : "(435)-752-0130",
+            "url" : "https://fredricospizza.com",
+            "img" : "images/fredricos.webp",
+            "mem-level" : "Bronze"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "Angies",
+            "address" : "690 Main St. Logan, UT 84321",
+            "phone" : "(435) 752-9252",
+            "url" : "https://angiesrest.com",
+            "img" : "images/angies.webp",
+            "mem-level" : "Bronze"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "The Crepery Logan",
+            "address" : "29 W Center St. Logan, UT 84321",
+            "phone" : "(435) 295-4531",
+            "url" : "https://www.the-crepery.com",
+            "img" : "images/crepery.webp",
+            "mem-level" : "Silver"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "The American West Heritage Center",
+            "address" : "4025 S. Hwy 89-91 Wellsville, UT 84339",
+            "phone" : "(435) 245-6050",
+            "url" : "https://www.awhc.org",
+            "img" : "images/awhc.webp",
+            "mem-level" : "NP"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "Zootah",
+            "address" : "419 W 700 S Logan, UT 84323",
+            "phone" : "(435) 750-9894",
+            "url" : "https://zootah.org",
+            "img" : "images/zootah.webp",
+            "mem-level" : "Bronze"
         },
         {
-            "name" : "",
-            "address" : "",
-            "phone-number" : "",
-            "url" : "",
-            "img" : "",
-            "mem-level" : ""
+            "name" : "Cox Honeyland & Gifts of Utah",
+            "address" : "1780 South Highway 89 Logan, UT 84321",
+            "phone" : "(435) 752-3234",
+            "url" : "https://coxhoney.com",
+            "img" : "images/cox-honey.webp",
+            "mem-level" : "Bronze"
         }
     ]
 }
