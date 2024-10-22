@@ -45,6 +45,12 @@ h3 {
     padding-bottom: 0.25rem;
 }
 
+h4{ 
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem; 
+}
+
 #menu {
     font-size: 1.5rem;
     position: absolute;
@@ -108,7 +114,7 @@ section {
     color: var(--sectxt);
 }
 
-section h3{
+section h3 {
     padding-top: 1rem;
 }
 
@@ -131,13 +137,58 @@ section h2 {
     padding: 0.5rem;
 }
 
-section #texts, #weather{
+section #texts, #weather, #forecast, #mainweather{
     padding: 1rem;
 }
 
 ul {
     list-style-type: none;
 }
+
+.weathercon{
+    text-transform: capitalize;
+}
+
+#mainweather{
+    text-align: center;
+    margin-top: -0.75rem;
+}
+
+#forecast{
+    display: flex;
+    column-gap: 3px;
+}
+
+.wthh3{
+    text-align: center;
+}
+
+#forecast section {
+    border: 1px solid var(--hdbg);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+#forecast section h4 {
+    margin-bottom: 7px;
+}
+
+#forecast section p {
+    margin-bottom: 5px;
+}
+
+.tempmin {
+    color: blue;
+    /* font-weight: bold; */
+}
+
+.tempmax {
+    color: red;
+    /* font-weight: bold; */
+}
+
+/* Discover Page */
 
 .events {
     width: 50%;
