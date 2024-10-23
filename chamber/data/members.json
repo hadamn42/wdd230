@@ -6,7 +6,7 @@
             "phone" : "(435) 792-4321",
             "url" : "https://www.hermsinn.com",
             "img" : "images/herms-inn-logo.webp",
-            "mem-level" : "Gold"
+            "mem_level" : "Gold"
         },
         {
             "name" : "Fredrico's Pizza",
@@ -14,7 +14,7 @@
             "phone" : "(435)-752-0130",
             "url" : "https://fredricospizza.com",
             "img" : "images/fredricos.webp",
-            "mem-level" : "Bronze"
+            "mem_level" : "Bronze"
         },
         {
             "name" : "Angies",
@@ -22,7 +22,7 @@
             "phone" : "(435) 752-9252",
             "url" : "https://angiesrest.com",
             "img" : "images/angies.webp",
-            "mem-level" : "Bronze"
+            "mem_level" : "Silver"
         },
         {
             "name" : "The Crepery Logan",
@@ -30,7 +30,7 @@
             "phone" : "(435) 295-4531",
             "url" : "https://www.the-crepery.com",
             "img" : "images/crepery.webp",
-            "mem-level" : "Silver"
+            "mem_level" : "Silver"
         },
         {
             "name" : "The American West Heritage Center",
@@ -38,7 +38,7 @@
             "phone" : "(435) 245-6050",
             "url" : "https://www.awhc.org",
             "img" : "images/awhc.webp",
-            "mem-level" : "NP"
+            "mem_level" : "NP"
         },
         {
             "name" : "Zootah",
@@ -46,7 +46,7 @@
             "phone" : "(435) 750-9894",
             "url" : "https://zootah.org",
             "img" : "images/zootah.webp",
-            "mem-level" : "Bronze"
+            "mem_level" : "Gold"
         },
         {
             "name" : "Cox Honeyland & Gifts of Utah",
@@ -54,7 +54,7 @@
             "phone" : "(435) 752-3234",
             "url" : "https://coxhoney.com",
             "img" : "images/cox-honey.webp",
-            "mem-level" : "Bronze"
+            "mem_level" : "Silver"
         }
     ]
 }

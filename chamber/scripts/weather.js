@@ -45,7 +45,7 @@ async function forecastFetch() {
 		const response = await fetch(url2);
 		if (response.ok) {
 			const data = await response.json();
-			console.log(data);
+			// console.log(data);
 			displayForecast(data);
 		} else {
 			throw Error(await response.text());
@@ -73,11 +73,18 @@ function displayForecast(data) {
 
 		let minTemp = document.createElement('p');
 		minTemp.classList.add('tempmin');
-		minTemp.innerHTML = `${data.list[z].main.temp_min}&deg; F`;
-
+		
 		let maxTemp = document.createElement('p');
 		maxTemp.classList.add('tempmax');
-		maxTemp.innerHTML = `${data.list[y].main.temp_max}&deg; F`;
+		
+
+		if (data.list[y].main.temp_max < data.list[z].main.temp_min){
+			minTemp.innerHTML = `${data.list[y].main.temp_min}&deg; F`;
+			maxTemp.innerHTML = `${data.list[z].main.temp_max}&deg; F`;
+		} else{
+			minTemp.innerHTML = `${data.list[z].main.temp_min}&deg; F`;
+			maxTemp.innerHTML = `${data.list[y].main.temp_max}&deg; F`;
+		}
 		
 		sanction.appendChild(dateHd);
 		sanction.appendChild(weathing);

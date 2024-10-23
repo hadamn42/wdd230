@@ -102,16 +102,18 @@ nav .active{
 .homepage {
     padding-top: 3rem;
     padding-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 25px;
-    justify-content: space-evenly;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
 }
 
 section {
-    width: 47%;
+    width: 100%;
     background-color: var(--secbg);
     color: var(--sectxt);
+    margin-bottom: 10px;
 }
 
 section h3 {
@@ -122,6 +124,12 @@ section h3 {
     height: auto;
     max-width: 100%;
     width: auto;
+}
+
+#secpot {
+    display: flex !important;
+    align-items: center !important;
+    flex-flow: column;
 }
 
 .center{
@@ -137,12 +145,63 @@ section h2 {
     padding: 0.5rem;
 }
 
-section #texts, #weather, #forecast, #mainweather{
+section #texts, #weather, #forecast, #mainweather, #spotlights {
     padding: 1rem;
 }
 
 ul {
     list-style-type: none;
+}
+
+#spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-self: center;
+    row-gap: 10px;
+}
+
+#banner {
+    background-color: var(--bodybg);
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    text-align: center;
+}
+
+#bannerbutt {
+    position: sticky;
+    left: 100%;
+    bottom: 100%;
+    width: 25px;
+    height: auto;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--hdtxt);
+    color: var(--hdbg);
+    border: var(--hdbg) 1px solid;
+}
+
+#bannerbutt:hover{
+    cursor: pointer;
+    background-color: var(--navbg);
+    color: var(--secbg);
+}
+
+#banner p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.25rem;
+    padding-bottom: 0rem;
+}
+
+.hide {
+    display: none;
+}
+
+#spotlights a{
+    display: grid;
+    justify-content: center;
 }
 
 .weathercon{
@@ -154,9 +213,12 @@ ul {
     margin-top: -0.75rem;
 }
 
-#forecast{
+ #forecast{
     display: flex;
-    column-gap: 3px;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-flow: row;
+
 }
 
 .wthh3{
