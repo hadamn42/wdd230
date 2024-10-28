@@ -15,9 +15,11 @@
         padding-right: 3rem;
     }
 
+    /* discovery page */
+
     .discover {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
         align-items: start;
         justify-content: center;
         column-gap: 2rem;
@@ -43,8 +45,14 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        
     }
 
+    .discpic:hover {
+        border: 15px solid var(--hdbg);
+    }
+
+    
     /* Discovery */
     .listmem .memigmy {
         display: inline-block;

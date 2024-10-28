@@ -120,10 +120,9 @@ section h3 {
     padding-top: 1rem;
 }
 
-#hero img{
+.hero{
     height: auto;
-    max-width: 100%;
-    width: auto;
+    max-width: 100% !important;
 }
 
 #secpot {
